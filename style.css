@@ -131,8 +131,9 @@ body {
     line-height: 42px;
     text-align: center;
     margin: 0 auto;
-    /* width: 156px; */
+    width: 156px;
     height: 43px;
+    font-size: 28px;
     margin-bottom: 17.7px;
 }
 
@@ -162,7 +163,7 @@ body {
 
 .skills-heading {
     margin: 0 auto;
-    /* width: 124.5px; */
+    width: 124.5px;
     height: 32px;
     font-size: 34px;
     line-height: 42px;
@@ -262,7 +263,7 @@ body {
 }
 
 .portfolio-heading {
-    /* width: 132.5px; */
+    width: 132.5px;
     height: 43px;
     margin: 0 auto;
     font-size: 34px;
@@ -305,7 +306,7 @@ body {
 
 .footer-heading {
     margin: 0 auto;
-    /* width: 145.6px; */
+    width: 145.6px;
     height: 43px;
     font-size: 34px;
     line-height: 42px;
@@ -543,11 +544,11 @@ body {
         position: absolute;
         bottom: 57px;
         right: 70px;
-        /* width: 150px; */
+        width: 144px;
         height: 42px;
         transform: rotate(90deg);
         transform-origin: bottom right;
-        font-size: 34px;
+        font-size: 28px;
         line-height: 42px;
     }
     
@@ -559,7 +560,9 @@ body {
     
     .about-me-heading {
         margin-bottom: 30px;
-        /* margin-left: 109px; */
+        width: 156px;
+        height: 43px;
+        margin-left: 109px;
     }
     
     .about-me-text {
@@ -577,7 +580,7 @@ body {
         width: 88px;
         height: 26px;
         margin-bottom: 50px;
-        /* margin-left: 143px; */
+        margin-left: 143px;
     }
     
     .skills-text {
@@ -607,7 +610,7 @@ body {
     
     .portfolio-heading {
         margin-bottom: 65px;
-        /* margin-left: 121px; */
+        margin-left: 121px;
     }
     
     .portfolio-project {
@@ -639,7 +642,7 @@ body {
     
     .footer-heading {
         margin-bottom: 27px;
-        /* margin-left: 115px; */
+        margin-left: 115px;
     }
     
     .footer-message {
