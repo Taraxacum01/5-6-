@@ -543,7 +543,7 @@ body {
         position: absolute;
         bottom: 57px;
         right: 70px;
-        width: 144px;
+        width: 150px;
         height: 42px;
         transform: rotate(90deg);
         transform-origin: bottom right;
@@ -559,6 +559,9 @@ body {
     
     .about-me-heading {
         margin-bottom: 30px;
+        width: 156px;
+        height: 43px;
+        margin-left: 109px;
     }
     
     .about-me-text {
@@ -576,6 +579,7 @@ body {
         width: 88px;
         height: 26px;
         margin-bottom: 50px;
+        margin-left: 143px;
     }
     
     .skills-text {
@@ -605,6 +609,7 @@ body {
     
     .portfolio-heading {
         margin-bottom: 65px;
+        margin-left: 121px;
     }
     
     .portfolio-project {
@@ -636,15 +641,18 @@ body {
     
     .footer-heading {
         margin-bottom: 27px;
+        margin-left: 115px;
     }
     
     .footer-message {
         margin-bottom: 39.84px;
+        margin-left: 50px;
     }
     
     .footer-button {
         width: 316px;
         margin-bottom: 48px;
+        margin-left: 29px;
     }
     
     .footer-socials {
