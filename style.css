@@ -133,7 +133,7 @@ body {
     margin: 0 auto;
     width: 156px;
     height: 43px;
-    font-size: 28px;
+    font-size: 34px;
     margin-bottom: 17.7px;
 }
 
@@ -548,7 +548,7 @@ body {
         height: 42px;
         transform: rotate(90deg);
         transform-origin: bottom right;
-        font-size: 28px;
+        font-size: 30px;
         line-height: 42px;
     }
     
@@ -562,6 +562,7 @@ body {
         margin-bottom: 30px;
         width: 156px;
         height: 43px;
+        font-size: 30px;
         margin-left: 109px;
     }
     
@@ -610,6 +611,7 @@ body {
     
     .portfolio-heading {
         margin-bottom: 65px;
+        font-size: 30px;
         margin-left: 121px;
     }
     
@@ -641,6 +643,7 @@ body {
     }
     
     .footer-heading {
+        font-size: 30px;
         margin-bottom: 27px;
         margin-left: 115px;
     }
