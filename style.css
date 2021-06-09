@@ -19,7 +19,8 @@
 }
 
 body {
-    width: 1445px;
+    max-width: 1445px;
+    width: 100vw;
     margin: 0 auto;
     font-family: Gilroy-Bold;
     font-size: 18px;
@@ -184,7 +185,7 @@ body {
 
 .skills-program-container {
     width: 936px;
-    margin: 0 253px 0 256px;
+    margin: 0 auto;
     height: 206.5px;
     display: flex;
     justify-content: space-between;
@@ -273,7 +274,7 @@ body {
 }
 
 .portfolio-project {
-    margin-left: 257px;
+    margin: 0 auto;
     width: 937px;
     text-align: center;
 }
@@ -403,7 +404,8 @@ body {
 
 @media (max-device-width:480px){
     body {
-        width: 375px;
+        width: 100vw;
+        max-width: 375px;
         color: #000000;
     }
 
