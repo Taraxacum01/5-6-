@@ -21,7 +21,7 @@
 body {
     max-width: 1445px;
     width: 100vw;
-    margin: 0 auto;
+    margin: 0;
     font-family: Gilroy-Bold;
     font-size: 18px;
     line-height: 22px;
@@ -550,7 +550,7 @@ body {
         height: 42px;
         transform: rotate(90deg);
         transform-origin: bottom right;
-        font-size: 30px;
+        font-size: 28px;
         line-height: 42px;
     }
     
@@ -564,7 +564,7 @@ body {
         margin-bottom: 30px;
         width: 156px;
         height: 43px;
-        font-size: 30px;
+        font-size: 28px;
         margin-left: 109px;
     }
     
@@ -584,6 +584,7 @@ body {
         height: 26px;
         margin-bottom: 50px;
         margin-left: 143px;
+        font-size: 28px;
     }
     
     .skills-text {
@@ -613,7 +614,7 @@ body {
     
     .portfolio-heading {
         margin-bottom: 65px;
-        font-size: 30px;
+        font-size: 28px;
         margin-left: 121px;
     }
     
@@ -645,7 +646,7 @@ body {
     }
     
     .footer-heading {
-        font-size: 30px;
+        font-size: 28px;
         margin-bottom: 27px;
         margin-left: 115px;
     }
