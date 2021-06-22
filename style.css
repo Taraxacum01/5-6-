@@ -156,10 +156,6 @@ body {
     padding: 0;
 }
 
-.about-me-text-m {
-    display: none;
-}
-
 .skills {
     width: 100%;
     height: 519px;
@@ -564,8 +560,8 @@ body {
         font-size: 28px;
         margin: 0 auto;
     }
-    
-    .about-me-text-m {
+
+    .about-me-text {
         margin: 0 auto;
         font-family: Gilroy-Medium;
         font-size: 18px;
@@ -576,10 +572,6 @@ body {
         justify-content: space-between;
         width: 316px;
         height: 261px;
-    }
-
-    .about-me-text {
-        display: none;
     }
     
     .skills {
