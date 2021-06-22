@@ -19,8 +19,8 @@
 }
 
 body {
-    max-width: 1445px;
-    width: 100vw;
+    /* max-width: 1445px;
+    width: 100vw; */
     margin: 0;
     font-family: Gilroy-Bold;
     font-size: 18px;
@@ -31,14 +31,18 @@ body {
 .header {
     width: 100%;
     height: 768px;
+    max-width: 1445px;
+    margin: 0 auto;
 }
 
 .header-nav {
-    width: 945px;
+    max-width: 945px;
     margin: 0 auto;
     padding-top: 32px;
     height: 23px;
-    margin-bottom: 32px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid #828282;
+    margin-bottom: 40px;
 }
 
 .header-nav ul {
@@ -63,21 +67,12 @@ body {
     color: #070707;
 }
 
-.header-line {
-    width: 940px;
-    height: 0px;
-    margin: 0 auto;
-    padding: 0;
-    border: 1px solid #828282;
-    margin-bottom: 40px;
-}
-
 .menu-icon, .menu-icon-open, .menu-languages {
     display: none;
 }
 
 .header-info {
-    width: 940px;
+    max-width: 940px;
     height: 120px;
     margin: 0 auto;
     display: flex;
@@ -95,11 +90,12 @@ body {
 }
 
 .header-info-about {
-    width: 155px;
+    width: 170px;
     font-family: Gilroy-Medium;
 }
 
 .header-info-languages {
+    display: inline-block;
     width: 65px;
     height: 20px;
     font-size: 16px;
@@ -109,16 +105,19 @@ body {
 
 .gray {
     color: #828282;
+    display: inline-block;
+    height: 20px;
 }
 
 .header-photo {
     margin: 0 auto;
-    width: 945px;
+    width: 100%;
     height: 388px;
     background: url(img/BSPP2266.png)center no-repeat;
 }
 
 .about-me {
+    margin: 0 auto;
     width: 100%;
     height: 506px;
     background: #F6F6F6;
@@ -132,7 +131,7 @@ body {
     line-height: 42px;
     text-align: center;
     margin: 0 auto;
-    width: 156px;
+    width: 170px;
     height: 43px;
     font-size: 34px;
     margin-bottom: 17.7px;
@@ -155,6 +154,10 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
+}
+
+.about-me-text-m {
+    display: none;
 }
 
 .skills {
@@ -184,7 +187,7 @@ body {
 }
 
 .skills-program-container {
-    width: 936px;
+    max-width: 936px;
     margin: 0 auto;
     height: 206.5px;
     display: flex;
@@ -275,7 +278,7 @@ body {
 
 .portfolio-project {
     margin: 0 auto;
-    width: 937px;
+    max-width: 937px;
     text-align: center;
 }
 
@@ -402,20 +405,15 @@ body {
     color: #828282;
 }
 
-@media (max-device-width:480px){
+@media (min-width:200px) and (max-width:768px){
     body {
-        width: 100vw;
-        max-width: 375px;
+        width: 100%;
         color: #000000;
     }
 
     .header {
         width: 100%;
         height: 836px;
-    }
-
-    .header-line {
-        display: none;
     }
 
     .header-info {
@@ -479,22 +477,21 @@ body {
     }
 
     .header-photo {
-        margin-left: 29px;
-        width: 316.5px;
+        width: 100%;
         height: 478px;
         background: url(img/BSPP2266-mobile.png)center no-repeat;
     }
 
     .header-nav {
         display: none;
-        position: absolute;
         top: 0;
-        width: 375px;
+        width: 100%;
         height: 812px;
         background: #FFFFFF;
         z-index: 1;
         margin: 0;
         padding: 0;
+        position: fixed;
     }
 
     .header-nav ul {
@@ -518,7 +515,7 @@ body {
     .menu-icon-open {
         position: absolute;
         top: 66px;
-        left: 324px;
+        right: 30px;
         display: block;
         width: 23px;
         height: 22px;
@@ -544,7 +541,7 @@ body {
     .menu-languages {
         display: block;
         position: absolute;
-        bottom: 57px;
+        top: 550px;
         right: 70px;
         width: 144px;
         height: 42px;
@@ -562,16 +559,27 @@ body {
     
     .about-me-heading {
         margin-bottom: 30px;
-        width: 156px;
+        width: 180px;
         height: 43px;
-        font-size: 28px;
-        margin-left: 109px;
+        font-size: 34px;
+        margin: 0 auto;
     }
     
-    .about-me-text {
+    .about-me-text-m {
+        margin: 0 auto;
+        font-family: Gilroy-Medium;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         width: 316px;
         height: 261px;
-        margin-left: 29px;
+    }
+
+    .about-me-text {
+        display: none;
     }
     
     .skills {
@@ -583,8 +591,7 @@ body {
         width: 88px;
         height: 26px;
         margin-bottom: 50px;
-        margin-left: 143px;
-        font-size: 28px;
+        font-size: 34px;
     }
     
     .skills-text {
@@ -593,8 +600,7 @@ body {
     
     .skills-program-container {
         width: 166.5px;
-        margin: 0;
-        margin-left: 104px;
+        margin: 0 auto;
         height: 1069px;
         display: flex;
         justify-content: space-between;
@@ -607,33 +613,30 @@ body {
     }
     
     .portfolio {
-        height: 1118px;
+        height: 1300px;
+        max-height: 1800px;
         padding-top: 81px;
         box-sizing: border-box;
     }
     
     .portfolio-heading {
+        font-size: 34px;
+        margin: 0 auto;
         margin-bottom: 65px;
-        font-size: 28px;
-        margin-left: 121px;
     }
     
     .portfolio-project {
-        margin-left: 29px;
-        width: 316px;
+        margin: 0 auto;
+        width: calc(100% - 64px);
     }
     
     .portfolio img {
-        width: 316px;
+        width: 100%;
     }
     
     .portfolio-project-text {
         margin-top: 35px;
         margin-bottom: 78px;
-    }
-    
-    .portfolio-project-text.braun {
-        margin-bottom: 0;
     }
 
     .portfolio-project-text.fashion {
@@ -646,31 +649,31 @@ body {
     }
     
     .footer-heading {
-        font-size: 28px;
+        font-size: 34px;
+        margin: 0 auto;
         margin-bottom: 27px;
-        margin-left: 115px;
     }
     
     .footer-message {
+        margin: 0 auto;
         margin-bottom: 39.84px;
-        margin-left: 50px;
     }
     
     .footer-button {
         width: 316px;
+        margin: 0 auto;
         margin-bottom: 48px;
-        margin-left: 29px;
     }
     
     .footer-socials {
         width: 315.1px;
         height: 41px;
-        margin-left: 29px;
+        margin: 0 auto;
         margin-bottom: 48px;
     }
     
     .footer-text {
-        margin-left: 29px;
+        margin: 0 auto;
         width: 315px;
         height: 64px;
         font-size: 18px;
